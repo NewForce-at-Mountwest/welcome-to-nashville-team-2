@@ -1,8 +1,8 @@
 // SEARCH 
-// document.querySelector("#park-btn").addEventListener("click", () =>{
-//     const searchPark = document.querySelector("#park-text").value;
-//     console.log(searchPark)
-// })
+document.querySelector("#park-btn").addEventListener("click", () =>{
+    const searchPark = document.querySelector("#park-text").value;
+    console.log(searchPark)
+})
 
 
 // Search through the api

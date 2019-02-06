@@ -10,4 +10,4 @@ fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${searchPark}=Yes`, {
         }
     })
 }
-searchParkFunction("community_center")
+// searchParkFunction("community_center")

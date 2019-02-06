@@ -15,3 +15,27 @@
 //       .then(parsedParks => {
 
 //       })
+
+
+
+const resultsString = (input) => {
+   return `<li>${input} <input type="submit" value="Save" id="save-btn" style="display:inline"/>
+    </li>`
+}
+
+
+const franklin = "Hello my name is Franklin"
+document.querySelector("#search-results").innerHTML = resultsString(franklin)
+
+console.log(resultsString(franklin))
+
+
+
+
+
+
+
+
+
+
+

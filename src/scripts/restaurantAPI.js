@@ -22,4 +22,4 @@ const restaruantAPI = (inquiry) => {
 
 
 
-restaruantAPI("cookies")
+// restaruantAPI("cookies")

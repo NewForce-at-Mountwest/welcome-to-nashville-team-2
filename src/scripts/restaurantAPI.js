@@ -14,6 +14,13 @@ const restaruantAPI = (inquiry) => {
     })
     .then(r => r.json())
     .then(results => {
+        let htmlString =""
+        for(let i=0; i < 4; i++) {
+            htmlString += resultsString(results.restaurants[i].restaurant.name)
+        
+        }
+        document.querySelector("#search-results").innerHTML = htmlString
+
         console.log(results)
         console.log(results.restaurants[0].restaurant.name, results.restaurants[0].restaurant.location.address)
     })
@@ -22,4 +29,4 @@ const restaruantAPI = (inquiry) => {
 
 
 
-// restaruantAPI("cookies")
+restaruantAPI("cookies")

@@ -4,9 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport content=width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- Search Container -->
+    <div class="search-container">
+      <div id="park-search">
+        <input type="text" id="park-text" />
+        <input
+          type="submit"
+          value="Search"
+          id="park-btn"
+          style="display:inline"
+        />
+      </div>
+      <div id="restaurant-search">
+        <input type="text" id="restaurant-text" />
+        <input
+          type="submit"
+          value="Search"
+          id="restaurant-btn"
+          style="display:inline"
+        />
+      </div>
+      <div id="concert-search">
+        <input type="text" name="" id="concert-text" />
+        <input
+          type="submit"
+          value="Search"
+          id="concert-btn"
+          style="display:inline"
+        />
+      </div>
+    </div>
+    <!-- Results Container -->
+    <div class="results-container">
+      <ol id="search-results">
+        Results:
+      </ol>
+    </div>
+    <!-- Itinerary Container -->
+    <div class="itinerary-container">
+      <div id="park-save">Park:</div>
+      <div id="restaurant-save">Restaurant:</div>
+      <div id="concert-save">Concert:</div>
+    </div>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>

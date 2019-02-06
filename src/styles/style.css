@@ -1,0 +1,45 @@
+.search-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+ #park-search {
+    padding: 1vh;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#restaurant-search {
+    padding: 1vh;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+#concert-search {
+    padding: 1vh;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.results-container {
+    border: 1px solid black;
+    margin: auto;
+    width: 60%;
+    height: 30vh;
+    margin-top: 50px;
+}
+
+
+.itinerary-container {
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    height: 30vh;
+}
+
+
+

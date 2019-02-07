@@ -41,5 +41,10 @@
     height: 30vh;
 }
 
+.welcome {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
 
 

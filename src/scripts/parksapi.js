@@ -5,9 +5,11 @@ fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${searchPark}=Yes`, {
 
     .then(parks => parks.json())
     .then(parsedParks => {
+        let emptyString = " "
         for (i = 0; i < 4; i++) {
-            console.log(parsedParks[i].park_name, parsedParks[i].mapped_location_address)
+            emptyString += resultsString(parsedParks[i].park_name, parsedParks[i].mapped_location_address)
         }
+        document.querySelector("#search-results").innerHTML = emptyString;
     })
 }
 // searchParkFunction("community_center")

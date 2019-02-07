@@ -10,11 +10,16 @@ const searchMeetUpFunction = (searchMeetup) => {
         .then(parsedMeetUps => {
             console.log(parsedMeetUps);
             let HTMLMeetString = "";
+            if (parsedMeetUps.events.length === 0 ){
+                handleWeirdSearchInputEvent();
+            }
+            else {
             for (i = 0; i < 4; i++) {
                 HTMLMeetString += resultsForMeetUpString(parsedMeetUps.events[i].name.text, parsedMeetUps.events[i].url, i, "event")
             }
-            document.querySelector("#search-results").innerHTML = HTMLMeetString;
+            document.querySelector("#search-results").innerHTML = HTMLMeetString;}
         })
+    
 }
 document.querySelector("#concert-btn").addEventListener("click", () => {
     let userSearches = document.querySelector("#concert-text").value;
@@ -54,6 +59,7 @@ document.querySelector(".results-container").addEventListener("click", () => {
 
 
             })
+
 
 
 

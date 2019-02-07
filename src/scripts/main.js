@@ -15,6 +15,10 @@ const resultsString = (name, location) => {
    return `<li class = "attempt">${name}  ${location} <input type="submit" value="Save" id="save-btn" style="display:inline"/>
     </li>`
 }
+const resultsForMeetUpString = (name, link) => {
+    return `<li>${name} <a href= "${link}"> More Info!</a> <input type="submit" value="Save" id="save-btn" style="display:inline"/>
+     </li>`
+ }
 
 
 

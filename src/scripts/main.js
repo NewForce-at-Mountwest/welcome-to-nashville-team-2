@@ -1,8 +1,12 @@
-// SEARCH 
+// SEARCH
 document.querySelector("#park-btn").addEventListener("click", () =>{
-    const searchPark = document.querySelector("#park-text").value;
-    console.log(searchPark)
+    let parkInput = document.querySelector("#park-text").value;
+    const newParkInput = parkInput.replace("_", " ")
+    // console.log(parkInput)
+    searchParkFunction(newParkInput)
 })
+// .replace
+// tolowercase
 
 
 // Search through the api
@@ -17,12 +21,10 @@ document.querySelector("#park-btn").addEventListener("click", () =>{
 //       })
 
 
-
 const resultsString = (input) => {
    return `<li>${input} <input type="submit" value="Save" id="save-btn" style="display:inline"/>
     </li>`
 }
-
 
 const franklin = "Hello my name is Franklin"
 document.querySelector("#search-results").innerHTML = resultsString(franklin)

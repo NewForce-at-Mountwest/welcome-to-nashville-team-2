@@ -1,8 +1,8 @@
 // SEARCH
 document.querySelector("#park-btn").addEventListener("click", () =>{
     let parkInput = document.querySelector("#park-text").value;
-    const newParkInput = parkInput.replace("_", " ")
-    // console.log(parkInput)
+    const newParkInput = parkInput.replace(" ", "_")
+    console.log(newParkInput)
     searchParkFunction(newParkInput)
 })
 // .replace

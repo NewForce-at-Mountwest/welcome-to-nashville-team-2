@@ -16,7 +16,12 @@ const restaruantAPI = (inquiry) => {
     .then(results => {
         let htmlString =""
         for(let i=0; i < 4; i++) {
-            htmlString += resultsString(results.restaurants[i].restaurant.name, results.restaurants[i].restaurant.location.address)
+
+            htmlString += resultsString(results.restaurants[i].restaurant.name, results.restaurants[i].restaurant.location.address, i, "food")
+        
+
+            // htmlString += resultsString(results.restaurants[i].restaurant.name, results.restaurants[i].restaurant.location.address)
+
 
         }
         document.querySelector("#search-results").innerHTML = htmlString

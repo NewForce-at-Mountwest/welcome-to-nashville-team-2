@@ -20,6 +20,8 @@ const resultsForMeetUpString = (name, link) => {
      </li>`
  }
 
+
+
 // const franklin = "Hello my name is Franklin"
 // const placeFranklin = "1234 happy street "
 // document.querySelector("#search-results").innerHTML = resultsString(franklin)
@@ -32,7 +34,7 @@ document.querySelector(".results-container").addEventListener("click", () => {
     let save1 = document.querySelector("#s1").textContent
     // const cln = save1.cloneNode(true)
     // const cln1 = cln.remove("input")
-    
+
     document.querySelector("#park-save").innerHTML = `Park: ${save1}`
     // document.querySelector("#park-save").insertAdjacentHTML(save1)
 
@@ -40,22 +42,22 @@ document.querySelector(".results-container").addEventListener("click", () => {
     // console.log(save1)
     } else if (event.target === document.querySelector("#save-btn2-park")) {
         let save2 = document.querySelector("#s2").textContent
-        
-        
+
+
         document.querySelector("#park-save").innerHTML = `Park: ${save2}`
-        
+
         } else if (event.target === document.querySelector("#save-btn3-park")) {
             let save3 = document.querySelector("#s3").textContent
-            
-            
+
+
             document.querySelector("#park-save").innerHTML = `Park: ${save3}`
-        
+
             // console.log("you clicked me")
             } else if (event.target === document.querySelector("#save-btn4-park")) {
                 let save4 = document.querySelector("#s4").textContent
-                
+
                 document.querySelector("#park-save").innerHTML = `Park: ${save4}`
-            
+
                 // console.log("you clicked me")
                 }
 

@@ -29,12 +29,42 @@ const restaruantAPI = (inquiry) => {
         document.querySelector("#search-results").innerHTML = htmlString
     })
 
-
-
 }
 document.querySelector("#restaurant-btn").addEventListener("click", () => {
     let userSearch = document.querySelector("#restaurant-text").value
     restaruantAPI(userSearch)
+
+})
+
+document.querySelector(".results-container").addEventListener("click", () => {
+    if(event.target === document.querySelector("#save-btn1-food")) {
+    let save1 = document.querySelector("#s1").textContent
+
+    document.querySelector("#restaurant-save").innerHTML = `Restaurant: ${save1}`
+
+    } else if (event.target === document.querySelector("#save-btn2-food")) {
+        let save2 = document.querySelector("#s2").textContent
+
+
+        document.querySelector("#restaurant-save").innerHTML = `Restaurant: ${save2}`
+
+        } else if (event.target === document.querySelector("#save-btn3-food")) {
+            let save3 = document.querySelector("#s3").textContent
+
+
+            document.querySelector("#restaurant-save").innerHTML = `Restaurant: ${save3}`
+
+            // console.log("you clicked me")
+            } else if (event.target === document.querySelector("#save-btn4-food")) {
+                let save4 = document.querySelector("#s4").textContent
+
+                document.querySelector("#restaurant-save").innerHTML = `Restaurant: ${save4}`
+
+                // console.log("you clicked me")
+                }
+
+
+
 
 })
 

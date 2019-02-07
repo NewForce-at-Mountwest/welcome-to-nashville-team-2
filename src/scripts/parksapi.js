@@ -7,7 +7,7 @@ fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${searchPark}=Yes`, {
     .then(parsedParks => {
         let emptyString = " "
         for (i = 0; i < 4; i++) {
-            emptyString += resultsString(parsedParks[i].park_name, parsedParks[i].mapped_location_address)
+            emptyString += resultsString(parsedParks[i].park_name, parsedParks[i].mapped_location_address, i, "park")
         }
         document.querySelector("#search-results").innerHTML = emptyString;
     })

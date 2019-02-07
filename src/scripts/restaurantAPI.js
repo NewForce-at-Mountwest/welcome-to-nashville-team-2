@@ -19,7 +19,16 @@ const restaruantAPI = (inquiry) => {
         let htmlString =""
         console.log(results)
         for(let i=0; i < 4; i++) {
+<<<<<<< HEAD
             htmlString += resultsString(results[i].restaurant.name, results[i].restaurant.location.address)
+=======
+
+            htmlString += resultsString(results.restaurants[i].restaurant.name, results.restaurants[i].restaurant.location.address, i, "food")
+        
+
+            // htmlString += resultsString(results.restaurants[i].restaurant.name, results.restaurants[i].restaurant.location.address)
+
+>>>>>>> master
 
         }
         document.querySelector("#search-results").innerHTML = htmlString

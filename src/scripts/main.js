@@ -11,8 +11,8 @@ document.querySelector("#park-btn").addEventListener("click", () =>{
 // tolowercase
 
 
-const resultsString = (name, location, numerator, typeOfSearch ) => {
-   return `<li>${name}  ${location} <input type="submit" value="Save" id="save-btn${numerator}-${typeOfSearch}" style="display:inline"/>
+const resultsString = (name, location, numerator, typeOfSearch) => {
+   return `<li id=s${numerator + 1}>${name}  ${location} <input type="submit" value="Save" id="save-btn${numerator + 1}-${typeOfSearch}" style="display:inline"/>
     </li>`
 }
 
@@ -23,7 +23,46 @@ const resultsString = (name, location, numerator, typeOfSearch ) => {
 // console.log(resultsString(franklin, placeFranklin))
 
 
+document.querySelector(".results-container").addEventListener("click", () => {
+    if(event.target === document.querySelector("#save-btn1-park")) {
+    let save1 = document.querySelector("#s1").textContent
+    // const cln = save1.cloneNode(true)
+    // const cln1 = cln.remove("input")
+    
+    document.querySelector("#park-save").innerHTML = `Park: ${save1}`
+    // document.querySelector("#park-save").insertAdjacentHTML(save1)
 
+    // console.log("you clicked me")
+    // console.log(save1)
+    } else if (event.target === document.querySelector("#save-btn2-park")) {
+        let save2 = document.querySelector("#s2").textContent
+        
+        
+        document.querySelector("#park-save").innerHTML = `Park: ${save2}`
+        
+        } else if (event.target === document.querySelector("#save-btn3-park")) {
+            let save3 = document.querySelector("#s3").textContent
+            
+            
+            document.querySelector("#park-save").innerHTML = `Park: ${save3}`
+        
+            // console.log("you clicked me")
+            } else if (event.target === document.querySelector("#save-btn4-park")) {
+                let save4 = document.querySelector("#s4").textContent
+                
+                document.querySelector("#park-save").innerHTML = `Park: ${save4}`
+            
+                // console.log("you clicked me")
+                }
+
+
+
+
+})
+
+// var elmnt = document.getElementsByTagName("DIV")[0];
+// var cln = elmnt.cloneNode(true);
+// document.body.appendChild(cln);
 
 
 

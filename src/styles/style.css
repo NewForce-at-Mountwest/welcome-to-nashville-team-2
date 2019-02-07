@@ -53,8 +53,10 @@
     padding: 1%;
 }
 
-#save-btn {
+#save-btn, #save-btn1-park, #save-btn2-park, #save-btn3-park, #save-btn4-park, #save-btn1-food, #save-btn2-food, #save-btn3-food, #save-btn4-food {
     border-radius: 6px;
     border-color: grey;
+    padding: 1%;
 }
+
 

@@ -24,11 +24,11 @@ const resultsString = (name, location) => {
 }
 
 
-const franklin = "Hello my name is Franklin"
-const placeFranklin = "1234 happy street "
-document.querySelector("#search-results").innerHTML = resultsString(franklin)
+// const franklin = "Hello my name is Franklin"
+// const placeFranklin = "1234 happy street "
+// document.querySelector("#search-results").innerHTML = resultsString(franklin)
 
-console.log(resultsString(franklin, placeFranklin))
+// console.log(resultsString(franklin, placeFranklin))
 
 
 

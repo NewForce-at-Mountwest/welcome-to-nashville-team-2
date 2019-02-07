@@ -20,6 +20,13 @@ const resultsString = (name, location) => {
 // const placeFranklin = "1234 happy street "
 // document.querySelector("#search-results").innerHTML = resultsString(franklin)
 
+<<<<<<< HEAD
+=======
+// const franklin = "Hello my name is Franklin"
+// const placeFranklin = "1234 happy street "
+// document.querySelector("#search-results").innerHTML = resultsString(franklin)
+
+>>>>>>> master
 // console.log(resultsString(franklin, placeFranklin))
 
 

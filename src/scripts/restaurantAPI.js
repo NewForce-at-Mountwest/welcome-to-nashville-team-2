@@ -14,12 +14,24 @@ const restaruantAPI = (inquiry) => {
     })
     .then(r => r.json())
     .then(results => {
-        console.log(results)
-        console.log(results.restaurants[0].restaurant.name, results.restaurants[0].restaurant.location.address)
+        let htmlString =""
+        for(let i=0; i < 4; i++) {
+            htmlString += resultsString(results.restaurants[i].restaurant.name, results.restaurants[i].restaurant.location.address)
+        
+        }
+        document.querySelector("#search-results").innerHTML = htmlString
     })
 
 }
 
+document.querySelector("#restaurant-btn").addEventListener("click", () => {
+    let userSearch = document.querySelector("#restaurant-text").value 
+    restaruantAPI(userSearch)
+
+})
+    
+
+ 
 
 
 // restaruantAPI("cookies")

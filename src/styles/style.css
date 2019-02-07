@@ -30,6 +30,7 @@
     width: 60%;
     height: 30vh;
     margin-top: 50px;
+    border-radius: 10px;
 }
 
 
@@ -39,6 +40,7 @@
     margin-top: 50px;
     width: 60%;
     height: 30vh;
+    border-radius: 10px;
 }
 
 .welcome {
@@ -47,4 +49,12 @@
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+.attempt {
+    padding: 1%;
+}
+
+#save-btn {
+    border-radius: 6px;
+    border-color: grey;
+}
 

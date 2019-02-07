@@ -12,9 +12,11 @@ document.querySelector("#park-btn").addEventListener("click", () =>{
 
 
 const resultsString = (name, location) => {
-   return `<li>${name}  ${location} <input type="submit" value="Save" id="save-btn" style="display:inline"/>
+   return `<li class = "attempt">${name}  ${location} <input type="submit" value="Save" id="save-btn" style="display:inline"/>
     </li>`
 }
+
+
 
 // const franklin = "Hello my name is Franklin"
 // const placeFranklin = "1234 happy street "

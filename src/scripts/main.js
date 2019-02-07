@@ -18,8 +18,8 @@
 
 
 
-const resultsString = (name, location) => {
-   return `<li>${name}  ${location} <input type="submit" value="Save" id="save-btn" style="display:inline"/>
+const resultsString = (name, location, numerator, typeOfSearch ) => {
+   return `<li>${name}  ${location} <input type="submit" value="Save" id="save-btn${numerator}-${typeOfSearch}" style="display:inline"/>
     </li>`
 }
 

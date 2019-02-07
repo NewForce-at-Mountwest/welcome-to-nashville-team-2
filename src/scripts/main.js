@@ -12,22 +12,13 @@ document.querySelector("#park-btn").addEventListener("click", () =>{
 
 
 const resultsString = (name, location, numerator, typeOfSearch) => {
-   return `<li id=s${numerator + 1}>${name}  ${location} <input type="submit" value="Save" id="save-btn${numerator + 1}-${typeOfSearch}" style="display:inline"/>
+   return `<li class = "attempt2" id=s${numerator + 1}>${name}  ${location} <input type="submit" value="Save" id="save-btn${numerator + 1}-${typeOfSearch}" style="display:inline"/>
     </li>`
 }
 const resultsForMeetUpString = (name, link, numerator, typeOfSearch) => {
     return `<li id=s${numerator + 1}>${name} <a href= "${link}"> More Info!</a> <input type="submit" value="Save" id="save-btn${numerator + 1}-${typeOfSearch}" style="display:inline"/>
      </li>`
  }
-
-
-
-// const franklin = "Hello my name is Franklin"
-// const placeFranklin = "1234 happy street "
-// document.querySelector("#search-results").innerHTML = resultsString(franklin)
-
-// console.log(resultsString(franklin, placeFranklin))
-
 
 document.querySelector(".results-container").addEventListener("click", () => {
     if(event.target === document.querySelector("#save-btn1-park")) {

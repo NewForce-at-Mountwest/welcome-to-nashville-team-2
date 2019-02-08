@@ -1,6 +1,6 @@
 #Read Me
 
-1) Open Git
+1) Open Git bash
 !!TYPE AS Followed!!
 2) CD Workspace
 3) CD welcome-to-nashville-team-2

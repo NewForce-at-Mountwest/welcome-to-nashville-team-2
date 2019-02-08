@@ -53,8 +53,6 @@ document.querySelector(".results-container").addEventListener("click", () => {
                 }
 
 
-
-
 })
 
 // var elmnt = document.getElementsByTagName("DIV")[0];

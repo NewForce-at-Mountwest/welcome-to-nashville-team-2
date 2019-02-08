@@ -63,4 +63,9 @@
     padding: 3%;
 }
 
+.food, .park, .event {
+    border-radius: 6px;
+    border-color: grey;
+    padding: 1%;
+}
 

@@ -22,18 +22,9 @@ const resultsForMeetUpString = (name, link, numerator, typeOfSearch) => {
 
  const resultsStringV2 = (name, location, numerator, typeOfSearch) => {
     return `<li id=s${numerator + 1}>${name}  ${location} <input type="submit" value="Save" id="save-btn${numerator + 1}" class = "${typeOfSearch}" style="display:inline"/>
-     </li>`
+     </li></br>`
  }
 
 
  document.querySelector(".results-container").addEventListener("click", saveItinerary)
-
-
-
-<<<<<<< HEAD
-})
-=======
-
-
->>>>>>> master
 

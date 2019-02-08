@@ -12,18 +12,10 @@ const searchParkFunction = (searchPark) => {
                 throw parsedParks;
             }
 
-<<<<<<< HEAD
-    .then(parks => parks.json())
-    .then(parsedParks => {
-        let emptyString = " "
-        for (i = 0; i < 4; i++) {
-            // emptyString += resultsString(parsedParks[i].park_name, parsedParks[i].mapped_location_address, i, "park")
-            emptyString += resultsStringV2(parsedParks[i].park_name, parsedParks[i].mapped_location_address, i, "park") 
-=======
             else {
             // loop through the results and return 4 of them to the search-results container
             for (i = 0; i < 4; i++) {
-                emptyString += resultsString(parsedParks[i].park_name, parsedParks[i].mapped_location_address, i, "park")
+                emptyString += resultsStringV2(parsedParks[i].park_name, parsedParks[i].mapped_location_address, i, "park")
             }
             // print them to search-results
             document.querySelector("#search-results").innerHTML = emptyString;
@@ -34,7 +26,6 @@ const searchParkFunction = (searchPark) => {
         .catch(error => {
 // console.log(error);
             handleWeirdSearchInputPark();
->>>>>>> master
         }
         )
 }
@@ -111,3 +102,11 @@ const searchParkFunction = (searchPark) => {
 //                     // console.log("you clicked me")
 //                     }
 //     })
+
+
+// .then(parks => parks.json())
+// .then(parsedParks => {
+//     let emptyString = " "
+//     for (i = 0; i < 4; i++) {
+//         // emptyString += resultsString(parsedParks[i].park_name, parsedParks[i].mapped_location_address, i, "park")
+//         emptyString += resultsStringV2(parsedParks[i].park_name, parsedParks[i].mapped_location_address, i, "park") 

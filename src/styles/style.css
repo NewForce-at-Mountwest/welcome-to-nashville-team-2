@@ -28,7 +28,7 @@
     border: 1px solid black;
     margin: auto;
     width: 60%;
-    height: 30vh;
+    height: 40vh;
     margin-top: 50px;
     border-radius: 10px;
 }
@@ -39,7 +39,7 @@
     margin: auto;
     margin-top: 50px;
     width: 60%;
-    height: 30vh;
+    height: 40vh;
     border-radius: 10px;
 }
 
@@ -53,10 +53,19 @@
     padding: 1%;
 }
 
-#save-btn, #save-btn1-park, #save-btn2-park, #save-btn3-park, #save-btn4-park, #save-btn1-food, #save-btn2-food, #save-btn3-food, #save-btn4-food {
+#save-btn, #save-btn1-park, #save-btn2-park, #save-btn3-park, #save-btn4-park, #save-btn1-food, #save-btn2-food, #save-btn3-food, #save-btn4-food, #save-btn1-event, #save-btn2-event, #save-btn3-event, #save-btn4-event {
     border-radius: 6px;
     border-color: grey;
     padding: 1%;
 }
 
+#park-save, #restaurant-save, #concert-save {
+    padding: 3%;
+}
+
+.food, .park, .event {
+    border-radius: 6px;
+    border-color: grey;
+    padding: 1%;
+}
 

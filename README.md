@@ -1,3 +1,19 @@
+#Read Me
+
+1) Open Git bash
+!!TYPE AS Followed!!
+2) CD Workspace
+3) CD welcome-to-nashville-team-2
+4) CD SRC
+5) CD LIB
+6) npm install
+7) grunt
+8) Use the park/food/events tool to search for things to do in Nashville
+9) After using the search button, click the "Save" button or continue searching.
+10) All of your saved events will appear into the box below the results box.
+
+
+
 # Welcome to Nashville: Build an itinerary for a day trip to Music City
 
 The Nashville Convention & Visitors Corp has contracted you to build a dashboard for tourists. Approximately 15.2 million people visit Nashville every year. NCVC wants an itinerary builder that lets tourists search for things to do during their stay.
@@ -29,7 +45,7 @@ When the user searches for any of the four categories of things to do, the resul
 
 1. Only one itinerary needs to exist at a time. If a user selects an item to add to the itinerary, and an item already exists for that category in the itinerary, then you will need to update the itinerary with the new data
 1. All teammates must be using Grunt to run ESLint, http-server, and json-server during development
-1. Each teammate is responsible for one API module. If your group has three members, you are only responsible for three of the APIs. Pick one to skip. You should discuss as a team how you want to handle printing to the DOM. 
+1. Each teammate is responsible for one API module. If your group has three members, you are only responsible for three of the APIs. Pick one to skip. You should discuss as a team how you want to handle printing to the DOM.
 1. The README for your project should include *detailed* instructions on how another person can download and run the application. PRO TIP: Don't wait until the very end to create the README.
 1. DO NOT FORGET to use a `.gitignore` file to keep git from tracking your node_modules folder
 1. Styling is strictly _secondary_, beyond necessary display formatting. Do not add any additional visual enhancements until you have a fully functional app. The goal of every member of the team is to implement functionality with JavaScript
@@ -120,3 +136,5 @@ Once the user has created the itinerary, you would use a PUT request to update a
 * Add an affordance to finalize an itinerary, and start a new one.
   * Add ability to view one or all of the itineraries
 * Instead of displaying all the search fields, search results, and itinerary list at the same time, add a nav bar or other feature(s) for hiding/showing what the user wants to view
+
+

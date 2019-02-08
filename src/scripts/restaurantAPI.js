@@ -19,7 +19,7 @@ const restaruantAPI = (inquiry) => {
         let htmlString =""
         for(let i=0; i < 4; i++) {
 
-            htmlString += resultsString(results[i].restaurant.name, results[i].restaurant.location.address, i, "food")
+            htmlString += resultsStringV2(results[i].restaurant.name, results[i].restaurant.location.address, i, "food")
 
 
             // htmlString += resultsString(results.restaurants[i].restaurant.name, results.restaurants[i].restaurant.location.address)

@@ -12,4 +12,5 @@ fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${searchPark}=Yes`, {
         document.querySelector("#search-results").innerHTML = emptyString;
     })
 }
+
 // searchParkFunction("community_center")

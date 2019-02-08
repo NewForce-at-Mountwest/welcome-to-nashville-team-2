@@ -17,6 +17,7 @@ const restaruantAPI = (inquiry) => {
     .then(r => r.json())
     .then(results => {
         let htmlString =""
+        // loop through results and print them to search-results 
         for(let i=0; i < 4; i++) {
 
             htmlString += resultsString(results[i].restaurant.name, results[i].restaurant.location.address, i, "food")
